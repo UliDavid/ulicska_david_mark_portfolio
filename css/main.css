@@ -1,0 +1,143 @@
+body{
+	background-color: lightgrey;
+	font-size: 32px;
+	color: dimgrey;
+	font-family: 'Roboto', sans-serif;
+	margin-left: 12px;
+	margin-right: 12px;
+}
+p{
+	text-align: justify;
+}
+main{
+	margin-left: 12px;
+	margin-right: 12px;
+}
+/*fejléc*/
+header{
+	background-color: grey;
+	border: 5px solid grey;
+	padding: 16px;
+	color: whitesmoke;
+	border-radius: 20px;
+}
+.fejlec{
+	font-size: 1.2em;
+	margin-bottom: 0px;
+	margin-top: 12px;
+	font-variant: small-caps;
+	text-align: center;
+}
+/*menüsor*/
+table{
+	border-spacing: 20px 2px;
+	margin-left: auto;
+	margin-right: auto;
+}
+a{
+	border: 3px solid lightgrey;
+	padding: 0.5rem 1rem;
+	color: dimgrey;
+	border-radius: 20px;
+	font-size: 1em;
+	background-color: lightgrey;
+}
+a:link {
+	text-decoration: none;
+}
+a{
+	transition: background-color 0.3s ease;
+  	background-color: lightgrey;
+}
+a:hover {
+	background-color: white;
+}
+link{
+	display: none;
+}
+/*lábléc*/
+footer{
+	background-color: grey;
+	border: 5px solid grey;
+	padding: 8px;
+	color: whitesmoke;
+	border-radius: 20px;
+}
+.lablec{
+	margin-top: 2px;
+	margin-bottom: 2px;
+	font-size: 1.5rem;
+}
+/*oldalcím*/
+h2{
+	text-align: center;
+}
+h3{
+	text-align: left;
+	margin-left: 5rem;
+}
+.h3kozep{
+	text-align: center;
+	margin: 0;
+}
+/*oldalkeret*/
+.keret{
+	border: 5px solid grey;
+	border-radius: 20px;
+	padding: 0px 24px 0px 24px;
+	margin: 10px 0px 10px 0px;
+}
+/*szövegközi képek*/
+.float_jobbra{
+	display: inline;
+	float: right;
+	border-radius: 20px;
+	max-height: 30rem;
+	max-width: 25%;
+	margin: 0.5rem 1rem 1rem 3rem;
+}
+.float_jobbra_terv{
+	display: inline;
+	float: right;
+	border-radius: 20px;
+	height: 40rem;
+	max-width: 50%;
+	margin: 0.5rem 1rem 1rem 3rem;
+}
+/*a Képek képek elrendezése*/
+.racs{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	grid-gap: 1rem;
+	margin-bottom: 1rem;
+}
+.kartya{
+	background-color: grey;
+	border-radius: 10px;
+	padding: 0.5rem;
+	margin-right: 0.5rem;
+	margin-left: 0.5rem;
+	text-align: center;
+	color: whitesmoke;
+}
+.kartya img{
+	display: block;
+	max-height: 13rem;
+	margin: 0 auto;
+	padding: 8px;
+	border-radius: 15px;
+	transition: 0.3s;
+}
+.kartya img:hover{
+  -ms-transform: scale(1.55); 
+  -webkit-transform: scale(1.55);
+  transform: scale(1.55); 
+}
+/*ha a menüsor túlnyúlna az ablak szélességén*/
+@media all and (max-width: 810px) {
+	td{
+		display: block;
+		margin-bottom: 2rem;
+		text-align: center;
+	}
+}
